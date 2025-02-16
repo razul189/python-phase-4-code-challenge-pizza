@@ -19,11 +19,10 @@ db.init_app(app)
 
 api = Api(app)
 
+# @app.route("/")
+# def index():
+#     return "<h1>Code challenge</h1>"
 
-@app.route("/")
-def index():
-    return "<h1>Code challenge</h1>"
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(port=5555, debug=True)
